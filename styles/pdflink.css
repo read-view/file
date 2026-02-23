@@ -1,17 +1,12 @@
 
 
-
-.body { 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
-    border: 5px;
-    /* border: solid red; */
-    box-sizing: content-box;
-    
- }
-
-
+body {
+    background-image: url("./images/imgbak.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
 
  ul {
     /* list-style-type: none; */
@@ -153,23 +148,25 @@
 h1 {
 	text-align: center;
 	margin-bottom: 20px;
-  	font-size: medium;
-	color: red;
+  font-size: 1.5em;
+  color: rgba(243, 19, 11, 0.897);
 }
 
 
 /* form css  */
-
 form {
+
+
+
+
     /* Center the form on the page */
     /* margin: 0 auto; */
     /* width: 400px; */
     /* Form outline */
     /* padding: 1em; */
-    border: 1px solid #ccc;
-    border-radius: 1em;
-
-    max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  max-width: 300px;
 	margin: 0 auto;
 	padding: 20px;
 	background-color: #fff;
@@ -247,6 +244,28 @@ form {
   .moveDown {
       margin-top: 3em;
   }
+
+
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button hover */
+input[type="submit"]:hover {
+    background-color: #357abd;
+}
+
   
   #error-message {
     display: none; /* Initially hidden */
@@ -272,6 +291,7 @@ form {
   /* Media Querry//
 
   /* Default styles here */
+
 
 /* Media query for mobile devices (iPhone, Android, etc.) */
 @media only screen and (max-width: 600px) {
@@ -311,7 +331,7 @@ form {
 }
 
 /* Media query for laptops and desktops */
-@media only screen and (min-width: 100%) {
+@media only screen and (min-width: 901px) {
 	/* Styles for laptops and desktops here */
 	form {
 		max-width: 400px;
